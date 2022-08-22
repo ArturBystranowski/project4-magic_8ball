@@ -1,0 +1,68 @@
+* {
+	font-size: 30px;
+	font-family: Montserrat;
+	color: white;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background: linear-gradient(90deg, #000428, #004e92);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 1000px;
+}
+
+.ball-img {
+	position: relative;
+}
+
+.ball-img img {
+	width: 200px;
+	position: relative;
+	left: 0px;
+	cursor: pointer;
+}
+
+.ball-img .shake {
+	animation: shaking 0.2s 6 ease-in-out;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+input {
+	width: 80%;
+	border-radius: 10px;
+	color: black;
+	padding: 10px;
+}
+
+.error {
+	color: tomato;
+}
+
+.answer {
+	color: lime;
+}
+
+@keyframes shaking {
+	0% {
+		left: 2px;
+	}
+	100% {
+		left: -2px;
+	}
+}
